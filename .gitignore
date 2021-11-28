@@ -5,6 +5,7 @@ __pycache__/
 servo/
 servo_original/
 switch/
+case/
 # C extensions
 *.so
 *.mp4
