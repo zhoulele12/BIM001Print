@@ -69,10 +69,10 @@ void setup()
 
 void loop()                     // run over and over again
 {
-  myServo.attach(servoPin);
+  
   getFingerprintID();
-  delay(200);
-  myServo.detach();
+  delay(500);
+  
 }
 
 uint8_t getFingerprintID() {
@@ -138,10 +138,13 @@ uint8_t getFingerprintID() {
   // found a match!
   Serial.print("Found ID #"); Serial.print(finger.fingerID);
   Serial.print(" with confidence of "); Serial.println(finger.confidence);
+  myServo.attach(servoPin);
+  
   myServo.write(170);
   delay(3000);
   myServo.write(0);
-  delay(25);
+  delay(100);
+  myServo.detach();
   
   
   return finger.fingerID;
