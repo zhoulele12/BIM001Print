@@ -2,10 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-servo/
-switch/
-ultrasonic/
-fingerprint-sensor/
 *.so
 *.mp4
 *.pptx
