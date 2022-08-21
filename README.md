@@ -1,10 +1,7 @@
 # BIM001Print
 
 ![Cover](util/demo.gif)
-<<<<<<< HEAD
 
-=======
->>>>>>> d4ccf370371f899fec20298018895ed05056071d
 This repo is for project BIM001-Print, which is a fingerprint lock designed for Duke's East House dorm.
 
 `main` folder has the Arduino code file which the fingerprint lock runs.
