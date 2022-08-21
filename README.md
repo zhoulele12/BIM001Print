@@ -1,4 +1,4 @@
-# 001Print
+# BIM001Print
 
 ![Cover](util/BIM001.jpg)
 This repo is for project BIM001-Print, which is a fingerprint lock designed for Duke's East House dorm.
