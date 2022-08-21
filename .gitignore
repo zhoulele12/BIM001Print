@@ -3,16 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 servo/
-servo_original/
 switch/
-case/
-# C extensions
+ultrasonic/
+fingerprint-sensor/
 *.so
 *.mp4
-*.jpg
-*.stl
-*.f3d
-*.xmind
 *.pptx
 # Distribution / packaging
 .Python
