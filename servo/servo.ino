@@ -8,5 +8,6 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  my_servo.write(130);
+  // 10 and 60
+  my_servo.write(10);
 }

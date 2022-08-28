@@ -4,7 +4,6 @@
 int servoPin = 9;
 Servo myServo;
 SoftwareSerial mySerial(2, 3);
-unsigned long startTime;
 Adafruit_Fingerprint finger = Adafruit_Fingerprint(&mySerial);
 
 void setup()
@@ -16,21 +15,13 @@ void setup()
 //  myServo.attach(servoPin);
 //  myServo.write(0);
   delay(3000);
-  startTime = millis();
 //  Serial.println(startTime);
 }
-
-void (* resetFunc) (void) = 0;
 
 void loop()                     // run over and over again
 {
   getFingerprintIDez();
   delay(200); 
-  if(millis()-startTime>=3600000){
-//    Serial.println(startTime);
-    startTime = millis();
-    resetFunc();  
-  }
 }
 
 // returns -1 if failed, otherwise returns ID #
